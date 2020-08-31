@@ -33,7 +33,7 @@ r = requests.post("https://manga.bilibili.com/twirp/activity.v1.Activity/ClockIn
 if r.json()['code'] == 0:
     print("签到成功.")
     msg = msg + "签到成功🐶\n"
-if r.json()['code'] == "invalid_argument":
+if r.json()['msg'] == "clockin clockin is duplicate":
     print("今日已签到.")
     msg = msg + "今日已签到⚠\n"
 
@@ -50,6 +50,8 @@ time.sleep(3)
 
 print("哔哩哔哩银瓜子兑换硬币 start>>>")
 print(b.silver_to_coin())
+
+# print(msg)
 
 # Server酱
 if serverJ != "":
