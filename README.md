@@ -34,4 +34,5 @@
 
 #### 其他项目：
 * [爱奇艺签到](https://github.com/BlueskyClouds/iQIYI-DailyBonus)
+* [同步Github代码](https://blog.blueskyclouds.com/jsfx/58.html)
 
